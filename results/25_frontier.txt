@@ -1,0 +1,13 @@
+Synthetic records: requests, steps/s, user tokens/s, tokens/s/GPU
+ 8 100 325.00 2600.00
+16  90 292.50 4680.00
+32  60 195.00 6240.00
+48  35 113.75 5460.00
+64  40 130.00 8320.00
+Non-dominated request counts: [8, 16, 32, 64]
+Mean accepted fraction 0.75: tau=3.250000
+Conditional acceptance 0.75: tau=2.734375
+Common axis shrink: 15.8654%
+Published point, approximate: 246 / 3.25 = 75.69 steps/s
+Implied throughput at R=64, CP=1: 15744 tokens/s/GPU
+Checks: exact prefix expectation and common-scale frontier passed

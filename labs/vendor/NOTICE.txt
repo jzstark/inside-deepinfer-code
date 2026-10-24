@@ -1,0 +1,5 @@
+eplb_policy.py is an unmodified copy of deepinfer/model_executor/eplb/policy.py
+from DeepSeek-AI/DeepInfer at commit 774ce244b87cc0eb8d4b94ab9f5de2ab22049f01,
+distributed under the Apache License 2.0 (see ../../excerpts/LICENSE).
+`make check` verifies it against the source manifest. labs/16_placement.py
+imports this single file; it does not import or run the DeepInfer package.

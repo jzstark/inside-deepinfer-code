@@ -1,0 +1,11 @@
+Release the tail pin before the queued copy
+  fork: parent=[1, 2, 3] child=[1, 2, 4] refs 1:2 2:2 3:2 4:1 copy=[(3, 4)]
+  parent finishes: free=[]; shared [1, 2] kept
+  writer receives block 3 before the copy runs
+  child reads [100, 101]...[900, 901]: correct=False
+
+Release the tail pin after the queued copy
+  fork: parent=[1, 2, 3] child=[1, 2, 4] refs 1:2 2:2 3:2 4:1 copy=[(3, 4)]
+  parent finishes: free=[]; shared [1, 2] kept
+  writer waits; receives block 3 after the copy
+  child reads [100, 101]...[108, 109]: correct=True

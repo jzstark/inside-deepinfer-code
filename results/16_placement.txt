@@ -1,0 +1,14 @@
+History by step: [[10, 10, 0, 0], [0, 0, 10, 10]]
+  candidate AB/CD: score=40
+  candidate AC/BD: score=20
+  policy AC/BD: score=20
+
+Skewed history by step: [[30, 6, 4, 0], [20, 10, 0, 6], [40, 2, 6, 2]]
+  initial ABC/DAB: score=70.00
+  policy AAD/ABC: score=68.00
+  physical->logical: ['A', 'A', 'D', 'A', 'B', 'C']
+  logical->physical: {'A': [0, 3, 1], 'B': [4], 'C': [5], 'D': [2]}
+  replicas: {'A': 3, 'B': 1, 'C': 1, 'D': 1}
+
+Replica-choice history by step: [[10, 0], [10, 18]]
+  replicas: A=1, B=2

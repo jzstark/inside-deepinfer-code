@@ -1,0 +1,15 @@
+window=3, keep=4; entries are consumer rows / SWA pairs
+case           off       mask     compact
+short         2/ 3    2/ 3    2/ 3
+long         12/33   12/ 9    4/ 9
+clipped       4/ 9    4/ 0    1/ 0
+crossing      4/12    4/ 3    2/ 3
+valid-start   2/ 3    2/ 3    2/ 3
+
+Equal layer costs, 20 producer + 20 consumer layers, keep=140
+length    full row-work    compact row-work    ratio
+    64             2560                2560   1.0000
+  1024            40960               23280   0.5684
+ 16384           655360              330480   0.5043
+four chunks: consumer rows [1, 1, 1, 140], total=143 (one chunk: 140)
+PASS 8910 range/pair cases against direct enumeration

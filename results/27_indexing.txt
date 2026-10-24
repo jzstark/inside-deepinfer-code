@@ -1,0 +1,9 @@
+Scores: [2, 6, 3, 0, 300] | valid prefix: 4
+Top-2 over valid rows: [1, 2]
+Candidate block scores: [6, 3] | retained block: 0
+Top-2 within retained block: [0, 1]
+One valid row, three output slots: [0, -1, -1]
+Prefill at gathered offset 10: [11, 12]
+Decode logical rows: [1, 2, 4, -1] -> physical slots: [29, 30, 8, -1]
+Payload bytes/row: main FP8=528; main FP4=288; index FP4=68
+Checks: bounds, candidate counterexample, sentinel and address mapping passed

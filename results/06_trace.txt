@@ -1,0 +1,11 @@
+Synthetic teaching trace: assigned timestamps, not engine measurements
+All times in ms; gaps exclude the wait for the first token
+id  queue  prompt  publish  TTFT  gaps
+A       2       6        2    10  4,4,4
+B       2       6        2    10  -
+C       8       8        3    19  4,4
+D       8       4        3    15  4
+E      27      12        3    42  4,16
+TTFT: n=5, mean=19.2, p50=15, p95=42
+Token gaps: n=8, mean=5.5, p95=16
+Whole trace: 13 tokens / 65 ms = 200.0 tokens/s

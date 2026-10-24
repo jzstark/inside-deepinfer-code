@@ -1,0 +1,422 @@
+{
+  "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+  "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "kind": "teaching experiments; standard library unless dependencies are listed; not hardware benchmarks",
+  "runs": [
+    {
+      "script": "labs/01_generate.py",
+      "sha256": "c9e12917557451994f5e37800dbb0f06576b29f3f6d8b71e3c4034da167b6f23",
+      "output": "results/01_generate.txt",
+      "output_sha256": "87f846537a57f7a254b89c8e35a540b8f85bd544e8f20160b4006d7607e32024",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/02_reuse.py",
+      "sha256": "09231a8e1ec3588348a313e6e83afd1c03a9c28d5cd9d4e87878c3579a701359",
+      "output": "results/02_reuse.txt",
+      "output_sha256": "d9e3be5c450d59d937e75655c71ac5163bbd99974b82fa0f539d54ce2d5358eb",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/03_batch.py",
+      "sha256": "a24614b60bca5dfd3ec6dcfd94fd081728a2d72b2af8e51a09bcc5af0affbab6",
+      "output": "results/03_batch.txt",
+      "output_sha256": "1c9ee4d28ee71f5405af0222e633cd54d3a0e7f8b686228c96229fcb0728763b",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/04_window.py",
+      "sha256": "330a56a41165eeddf82e45ce65cebf32b1b03b1d8e1281f36d68d8a2ae802eba",
+      "output": "results/04_window.txt",
+      "output_sha256": "4caa68f98560f700dcd39f968cdacf230e50e8fb7013e5bb675435123be2bac0",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/05_cost.py",
+      "sha256": "5b29c78026f7fd72e89e1e89f48002986fdf38ca901cefd265aecba1cb005cef",
+      "output": "results/05_cost.txt",
+      "output_sha256": "8ce50b2a907cf0ef06c50c56e56dcfb89656692c75a6c56a8ead1dc3f8fa1557",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      },
+      "artifacts": [
+        {
+          "path": "results/05_cost_curve.csv",
+          "sha256": "1ccad1d962625e6d47953a254efc6d6b693230d0577f31a5fa89c44fec2449fc"
+        }
+      ]
+    },
+    {
+      "script": "labs/06_trace.py",
+      "sha256": "e135117b9a59976625b59fe553bba0ab454e2edf481bbcac0b40a70f442830d1",
+      "output": "results/06_trace.txt",
+      "output_sha256": "1e8d809713aa50d37c8917f7046517bc6c246b4078967c5aa1d7c7d963bfcc88",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      },
+      "inputs": [
+        {
+          "path": "labs/data/06_request_trace.json",
+          "sha256": "0014fb405f2bc0f4789c3b18d041e94cf142ab104aefbb197cdf80a0177db870"
+        }
+      ]
+    },
+    {
+      "script": "labs/07_attention.py",
+      "sha256": "8dd20968dadbf8796f7f9eeb3a3de70d433b906b1c8e2ee182cb3d23f4b8baca",
+      "output": "results/07_attention.txt",
+      "output_sha256": "018629a8bf0dc2619065f9d3407d967c7f3fa07d7ebfaa5cee1fdd63736d1a2d",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/08_kv_layout.py",
+      "sha256": "a111d6166ea907fef214714b6df1ff5e4ea6dea0e499936ed6dd5a9a734cb64d",
+      "output": "results/08_kv_layout.txt",
+      "output_sha256": "99a39c41d1a4e68cc47b41b8d8f66a12eb2859010499ddc65a4f439cb58cd656",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/09_blocks.py",
+      "sha256": "b80c5c750439ac6980145f4760a8e6d6f6e42781a9f298a74dcf711929f35e12",
+      "output": "results/09_blocks.txt",
+      "output_sha256": "103b3d9c92588040d023df90818c137dd58b0847ba71648fb321277bf6d4159d",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/10_share.py",
+      "sha256": "0ad884e3224ba763b6f3b6dc35b724159c39be20d6b6e787b50ca2c51458ef23",
+      "output": "results/10_share.txt",
+      "output_sha256": "a75a64779f88b258553f7ec1df4d8874b509059e19baddfb9b446537df37e640",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/11_chunks.py",
+      "sha256": "6f2c06e9a2092c41b57d10d9622f6abb1aff8b2abf2f7d19fe93e9735082b0e0",
+      "output": "results/11_chunks.txt",
+      "output_sha256": "63fac4efd4d5022b8d5536cd181d84e217b5408e37ae363f65b953f0ca96f9e1",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/12_preempt.py",
+      "sha256": "4144df1a9c13f20011d1e2cf4b2eca34aa7b9ba087d2cb2344cf5fd3cf45cd6b",
+      "output": "results/12_preempt.txt",
+      "output_sha256": "bdd44c026bfca4445a6424147ccd68767da7ad3d04ac4d152f6d3633d3e0be55",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/13_overlap.py",
+      "sha256": "fd0c34433eb9b6c2cefd45b8daac6f244dd64031277fac1d98f5f0b421eda790",
+      "output": "results/13_overlap.txt",
+      "output_sha256": "5356b60ed1f6459f8d3ac15bbe9c7a016d2583631f65f3c7cb4f0f777972ad94",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      },
+      "artifacts": [
+        {
+          "path": "results/13_timeline.tex",
+          "sha256": "0465576ad1e8ae3dd195e98fd7e7552c0509f1d8c10b0cce90486fdb10ea6975"
+        }
+      ]
+    },
+    {
+      "script": "labs/14_lagging_metadata.py",
+      "sha256": "f7a14e07f243f6c7de117affcfcdc6b8579ebcbb73bee6bfa509ae40609e645c",
+      "output": "results/14_lagging_metadata.txt",
+      "output_sha256": "d156d3ae76edffe9d12389cfd11bc345e7293ef41cafdab651f47c48903bde21",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/15_dispatch.py",
+      "sha256": "632fb1c9ec168c67817c173b256d1271ba0b8d0ce398c886a54c403810692f06",
+      "output": "results/15_dispatch.txt",
+      "output_sha256": "b14ad8c7b6d715df6e9d365167705537e671ee893f6bd2dfa5c427c4612a3cc7",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/16_placement.py",
+      "sha256": "01e2621e460ab3e98ed3c02173ec7bfd0a2470e35ff096217d44645b10413826",
+      "output": "results/16_placement.txt",
+      "output_sha256": "f6c57142ddf18236fe7d77784bce8262cc1318f3045c01ff2191578672808705",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      },
+      "inputs": [
+        {
+          "path": "labs/vendor/eplb_policy.py",
+          "sha256": "52241603827a1a1d19a395d48f5d618a7336fd1ceee631127e6782c644f736dc"
+        }
+      ],
+      "dependencies": {
+        "torch": "2.9.1+cu126"
+      }
+    },
+    {
+      "script": "labs/17_verification.py",
+      "sha256": "e34319074607107ca5ec4d1bda384305396dc344fd8f5ba1be267d6bea213621",
+      "output": "results/17_verification.txt",
+      "output_sha256": "cbc89a8ae53a395df027d23ebdc7f8dfb7d33499c0561005b3b4e1a767879b76",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/18_verification_budget.py",
+      "sha256": "aa14ed448b4694eaa8629e6951e38daafa58c76037dcd10c6aed419932ae1add",
+      "output": "results/18_verification_budget.txt",
+      "output_sha256": "664af761698719e6a91eecf911b6e8dc580044061cee802e72ebfaddb5eb08d9",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      },
+      "inputs": [
+        {
+          "path": "labs/data/18_dspark.csv",
+          "sha256": "6cbf366f2ab6c2e99b4e9c3feaf072f276c539eab3bd29ef052b9a894cb51bd4"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "results/18_budget_curve.csv",
+          "sha256": "c42377cede670863846e2104408cbaffe516ea8d4819ae759eef2642c4f862e5"
+        }
+      ]
+    },
+    {
+      "script": "labs/19_replay.py",
+      "sha256": "4187c117927f6566f9086203232f9eaad60646c2ab71419062ca13969a296b23",
+      "output": "results/19_replay.txt",
+      "output_sha256": "c71496c5b88452ecb08f092d62a271a53f2c09b3c3e91b938cf92c65f2e6772c",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/20_replay_cost.py",
+      "sha256": "83b9ebff1807b5912c91464916865b89ec4e66bdc83d9bd9c3a0abd2d437b597",
+      "output": "results/20_replay_cost.txt",
+      "output_sha256": "5fac4609b4c204019f125c7679102e71b800274bf29808d99cd195f7db5536c2",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/21_equality.py",
+      "sha256": "5f577efa7d7d037379df2e92ccb45e3e30d552a3d9d49ed8d5d3de331212b0fc",
+      "output": "results/21_equality.txt",
+      "output_sha256": "bff9db40f95eb89e35a68a918f806ebd3c6c49e44301f54d9c3957498222d6f9",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/22_sampling_contracts.py",
+      "sha256": "b31ba496563c50b8abc7685917c480c3578be6a15db8cade5e82a1683ed8f02f",
+      "output": "results/22_sampling_contracts.txt",
+      "output_sha256": "b2493671e80a7d92a4a8c65101a390d64220c20408c26a7d1822c4808b6a34a0",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/23_service.py",
+      "sha256": "5862f0944dfe0e17e6aafddbd8fbf42fab8eab1f3d64afd60323f88f8792ed34",
+      "output": "results/23_service.txt",
+      "output_sha256": "bbb1506edae8019b2ed8a6f4d6f19f6a4ab5d1ac844414e6625bb8cdf649e7bc",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/24_cache_hits.py",
+      "sha256": "3cbebd5189acdb02ad6c0e9b8c0f8e272cd2916e37aab77d8bf6d8979d72f886",
+      "output": "results/24_cache_hits.txt",
+      "output_sha256": "9aeca0776fd59287fbba0b7dd0c37848a12b21f5717d77d63643de6a77f820eb",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/25_frontier.py",
+      "sha256": "e61ab64f9a599f141155ef39ed69332f287abe8c73b7bd9340e2125c6d9d6309",
+      "output": "results/25_frontier.txt",
+      "output_sha256": "b9114b6f21f6c4a8ebc9c3e278731958fa0eaf4084f01e413177ca1137ac0157",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      },
+      "artifacts": [
+        {
+          "path": "results/25_points.csv",
+          "sha256": "17766ed2cec0a0a4a848f2483c017958ae191df72a54c3d1b88ea9e0b76875ff"
+        },
+        {
+          "path": "results/25_frontier.csv",
+          "sha256": "5bd64885a918c0753c402032faf328b2ab042921269bcec5259d2a6852caa2b3"
+        }
+      ]
+    },
+    {
+      "script": "labs/26_compression.py",
+      "sha256": "2b134e851a6af75064fd6e0be495d24a4cb3be7e39248b412c8b051c89c83737",
+      "output": "results/26_compression.txt",
+      "output_sha256": "87e11e5357b3df830e5a92cc30e3139c183a308433237d8de2192b638e70eba0",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/27_indexing.py",
+      "sha256": "a1f1c2ff5028c78369b11f9e946dd7ec5410a3b1762b0232efaf6f338784c70d",
+      "output": "results/27_indexing.txt",
+      "output_sha256": "3156e34079571f3c713109bc63277cb46db19e4d233fd8f1ae491da47d152e15",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    },
+    {
+      "script": "labs/28_ranks.py",
+      "sha256": "75896be2ecec0e3d2b8d8db2e2cc60bc08a8b2183da8d1aec016cffd64014b39",
+      "output": "results/28_ranks.txt",
+      "output_sha256": "a1c659d218598c051eccebaf33d917f667f7d4a39e7f30bc567e310efda65424",
+      "exit_code": 0,
+      "stderr": "",
+      "execution": {
+        "executed_at_utc": "2026-10-23T16:50:21.995430+00:00",
+        "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+        "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+      }
+    }
+  ],
+  "skipped": []
+}

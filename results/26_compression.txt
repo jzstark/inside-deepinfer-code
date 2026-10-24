@@ -1,0 +1,7 @@
+C2 rows (before BF16/norm/RoPE): [('6', '8'), ('8', '3'), ('3', '5')]
+Chunks [0,1), [1,4), [4,7): valid/reserved rows [(0, 1), (2, 2), (1, 1)]
+Pending token positions: [6]
+Six-position decode: ring 7 preserves every completed pair
+Ring 6 corrupts first pair: ('42/5', '8')
+Checks: 64 chunk partitions agree exactly; undersized ring fails
+Default C2 state payload: 7 * 2 * 512 * 4 = 28672 bytes

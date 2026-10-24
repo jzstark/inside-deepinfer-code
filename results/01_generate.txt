@@ -1,0 +1,6 @@
+step 1: <start> -> Small
+step 2: Small -> steps
+step 3: steps -> help
+step 4: help -> <end>
+stop: end token
+text: Small steps help

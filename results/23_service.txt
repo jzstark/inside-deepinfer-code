@@ -1,0 +1,10 @@
+Assigned time units; four requests, two P and two D workers
+local affinity: P ends [3, 5, 7, 9]; D ends [8, 10, 12, 14]
+shared cache: P ends [3, 3, 5, 5]; D ends [8, 8, 12, 12]
+shared, no hits: P ends [9, 9, 17, 17]; D ends [14, 14, 22, 22]
+shared, slower handoff: P ends [3, 3, 5, 5]; D ends [10, 10, 14, 14]
+affinity, slower handoff: P ends [3, 5, 7, 9]; D ends [10, 12, 14, 16]
+Capacity model (GPU equivalents, not deployment sizes):
+reused input fraction 0%: P=3, D=3
+reused input fraction 75%: P=1, D=3
+Checks: routing, stage dependencies, P ownership and capacity passed

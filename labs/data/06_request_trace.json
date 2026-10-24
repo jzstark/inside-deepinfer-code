@@ -1,0 +1,12 @@
+{
+  "kind": "Synthetic teaching trace: assigned timestamps, not engine measurements",
+  "unit": "ms",
+  "clock": "One common observation clock; zero is the first arrival",
+  "requests": [
+    {"id": "A", "arrival": 0, "prompt_start": 2, "prompt_end": 8, "tokens": [10, 14, 18, 22]},
+    {"id": "B", "arrival": 0, "prompt_start": 2, "prompt_end": 8, "tokens": [10]},
+    {"id": "C", "arrival": 1, "prompt_start": 9, "prompt_end": 17, "tokens": [20, 24, 28]},
+    {"id": "D", "arrival": 2, "prompt_start": 10, "prompt_end": 14, "tokens": [17, 21]},
+    {"id": "E", "arrival": 3, "prompt_start": 30, "prompt_end": 42, "tokens": [45, 49, 65]}
+  ]
+}

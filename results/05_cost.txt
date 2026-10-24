@@ -1,0 +1,24 @@
+Hypothetical model; times in microseconds
+R=N  transfer  compute     step   tokens/s
+  1      41.0      2.0     61.0      16393
+  4      44.0      8.0     64.0      62500
+  8      48.0     16.0     68.0     117647
+ 16      56.0     32.0     76.0     210526
+ 32      72.0     64.0     92.0     347826
+ 40      80.0     80.0    100.0     400000
+ 64     104.0    128.0    148.0     432432
+128     168.0    256.0    276.0     463768
+
+One change at a time (microseconds)
+R=N=16, double compute rate: 76.0 -> 76.0
+R=N=32, four times context traffic: 92.0 -> 188.0
+
+Same 16 requests, more positions (microseconds)
+ R   N  transfer  compute     step
+16  16      56.0     32.0     76.0
+16  28      56.0     56.0     76.0
+16  96      56.0    192.0    212.0
+
+Assigned useful-output counts; rate = U / step_s
+R=16, N=32, U=24: 84 us, 285714 useful tokens/s
+R=16, N=64, U=28: 148 us, 189189 useful tokens/s

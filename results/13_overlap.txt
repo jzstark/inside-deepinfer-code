@@ -1,0 +1,13 @@
+Assigned units. interval = repeating step; idle = device idle per step;
+gap = device wait between forward and sample; wait = host wait for sample 3;
+first = first sample end; finish = end of final post-processing.
+case                       mode  interval idle gap wait first finish
+baseline                   sync     20      8      0     10     16    120
+baseline                   ZOS      12      0      0      2     16     80
+slow scheduling            sync     29     17      0     10     25    174
+slow scheduling            ZOS      19      7      0      0     25    120
+long post-processing       sync     30     18      0     10     16    180
+long post-processing       ZOS      20      8      5      0     16    127
+correction before forward  ZOS      13      0      0      3     16     85
+
+Timer view of the baseline: a host timer around 'launch' records 1 unit; the device forward it queued lasts 10.

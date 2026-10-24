@@ -1,0 +1,8 @@
+shared stream AB: A=0, B=1
+shared stream BA: A=1, B=0
+keyed draws: all 6 batch orders and single requests agree
+q=1, position 7: fresh target, token=1
+q=3, position 7: accepted draft, token=0
+ideal marginal in both budgets: [1/2, 1/2]
+PIT quarter masses, correct: 1/4, 1/4, 1/4, 1/4
+PIT quarter masses, biased:  1/8, 1/8, 3/8, 3/8

@@ -1,0 +1,66 @@
+Cumulative confidence; two requests, three draft positions each
+  N-2: [[0.9, 0.72, 0.36], [0.8, 0.4, 0.1]]
+  N-1: [[0.4, 0.2, 0.1], [0.95, 0.855, 0.684]]
+
+flat: synthetic time units; sampler=2, slope=0
+  positions graph expected time  output/time
+          2     2     2.00   10       0.2000
+          3     4     2.90   10       0.2900
+          4     4     3.70   10       0.3700
+          5     6     4.42   10       0.4420
+          6     6     4.82   10       0.4820
+          7     8     5.18   10       0.5180
+          8     8     5.28   10       0.5280
+  chosen total=8, q(N-1)=[4, 4]
+  allocation using N-2 instead: [4, 4]
+
+stairs: synthetic time units; sampler=2, slope=0
+  positions graph expected time  output/time
+          2     2     2.00   10       0.2000
+          3     4     2.90   12       0.2417
+          4     4     3.70   12       0.3083
+          5     6     4.42   14       0.3157
+          6     6     4.82   14       0.3443
+          7     8     5.18   30       0.1727
+          8     8     5.28   30       0.1760
+  chosen total=6, q(N-1)=[2, 4]
+  allocation using N-2 instead: [3, 3]
+
+steep: synthetic time units; sampler=2, slope=0
+  positions graph expected time  output/time
+          2     2     2.00   10       0.2000
+          3     4     2.90   12       0.2417
+          4     4     3.70   12       0.3083
+          5     6     4.42   25       0.1768
+          6     6     4.82   25       0.1928
+          7     8     5.18   40       0.1295
+          8     8     5.28   40       0.1320
+  chosen total=4, q(N-1)=[1, 3]
+  allocation using N-2 instead: [2, 2]
+
+moved: synthetic time units; sampler=2, slope=0
+  positions graph expected time  output/time
+          2     2     2.00   10       0.2000
+          3     5     2.90   12       0.2417
+          4     5     3.70   12       0.3083
+          5     5     4.42   12       0.3683
+          6     6     4.82   25       0.1928
+          7     8     5.18   40       0.1295
+          8     8     5.28   40       0.1320
+  chosen total=5, q(N-1)=[1, 4]
+  allocation using N-2 instead: [3, 2]
+
+GPU rank-count reference; remap=[0,-1,1]
+  total=7: q=[3, 1, 3]
+  total=8: q=[3, 2, 3]
+  CPU missing-rate fill=1, same total=7: q=[3, 3, 1]
+  Both conserve the budget; zero confidence can receive surplus slots.
+
+DSpark: DeepSeek's reported throughput estimates, not lab timings
+  concurrency fixed dynamic gain
+           16  4891    4816  -1.5%
+           32  8964    9111  +1.6%
+           48 12032   12467  +3.6%
+           60 13730   14466  +5.4%
+           72 14962   15961  +6.7%
+           96 16817   18660 +11.0%

@@ -1,0 +1,16 @@
+Fixed batches
+round 1: A B
+round 2: A B
+round 3: - B
+round 4: - B
+round 5: C -
+rounds: 5 | unused slot-rounds: 3
+finish: A=2, B=4, C=5
+
+Refill after each round
+round 1: A B
+round 2: A B
+round 3: C B
+round 4: - B
+rounds: 4 | unused slot-rounds: 1
+finish: A=2, B=4, C=3

@@ -1,0 +1,2 @@
+deep_gemm.use_deterministic_algorithms(True)
+tile_kernels.use_deterministic_algorithms(True)

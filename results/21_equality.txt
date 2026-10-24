@@ -1,0 +1,6 @@
+row-count-dependent: single=1, batched=0
+row-count-dependent: masked=0, compact=1
+fixed order: A=1 in every layout; 6 subset/order checks
+adjacent float32 inputs: equal=False, abs diff=1.16415321827e-10
+exp(d)-1-d metric=0; zero does not establish equality
+logprob lists differ; both perplexities=7.389056099

@@ -1,0 +1,9 @@
+admit A(6), B(9)               A=[1, 2] B=[3, 4, 5]         free=[6, 7]
+A reaches 8 tokens             A=[1, 2] B=[3, 4, 5]         free=[6, 7]
+A reaches 9 tokens             A=[1, 2, 6] B=[3, 4, 5]      free=[7]
+A at 11, two drafts reserved   A=[1, 2, 6, 7] B=[3, 4, 5]   free=[]
+drafts rejected; A at 12       A=[1, 2, 6] B=[3, 4, 5]      free=[7]
+admission check for 4 blocks: LATER
+B finishes                     A=[1, 2, 6]                  free=[7, 5, 4, 3]
+admission check for 4 blocks: OK
+admission check for 8 blocks: NEVER

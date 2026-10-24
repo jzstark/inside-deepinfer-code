@@ -1,0 +1,84 @@
+These excerpts are from DeepSeek-AI/DeepInfer at commit
+774ce244b87cc0eb8d4b94ab9f5de2ab22049f01, distributed under Apache-2.0.
+See LICENSE and ../source-manifest.json for source paths and original ranges.
+Common leading indentation has been removed for typesetting. Code and comments
+within each selected range are otherwise unchanged.
+
+The original headers of deepinfer/entrypoints/llm.py,
+deepinfer/engine/llm_engine.py and deepinfer/worker/worker.py state:
+
+# SPDX-License-Identifier: Apache-2.0
+# Derived from vLLM; modified by DeepSeek.
+
+These notices apply to all excerpts whose manifest source is one of those three
+Python files. C++ excerpts come from csrc/engine/sequence.hpp, scheduler.hpp,
+outputs.hpp, pybind_output.cpp and flops_estimator.hpp in the same Apache-2.0
+repository.
+
+The prepared excerpts also include deepinfer/timer.py and examples/benchmark.py
+from the same Apache-2.0 repository. The manifest records
+each selected range; Chinese comments omitted from the printed ranges remain
+in the original source and are translated separately in the prose where used.
+
+Chapter 3 excerpts cover V4 attention, CUDA index construction, cache formats
+and cache-engine views. They come from
+the same pinned Apache-2.0 repository; their exact files and ranges are recorded
+in the manifest. cache_engine.py also carries the SPDX and vLLM derivation
+notice reproduced above.
+
+Chapter 4 excerpts add csrc/engine/block_manager.hpp and further ranges of
+deepinfer/engine/llm_engine.py, csrc/engine/sequence.hpp and
+csrc/engine/scheduler.hpp, all from the same pinned Apache-2.0 repository.
+The manifest records each file and range.
+
+Chapter 5 adds scheduler policy and sequence-reset ranges, and prefill address
+construction from csrc/engine/input_metadata/prepare_tensor_input_v4.cpp.
+All are from the same pinned Apache-2.0 repository. Chinese comments outside
+the selected ranges are cited and translated in the surrounding prose.
+
+Chapter 6 adds ranges of csrc/engine/zos.cpp, deepinfer/worker/worker.py,
+deepinfer/engine/llm_engine.py and two TileLang helper modules under
+deepinfer/model_executor/layers/tilelang_ops/, all from the same pinned
+Apache-2.0 repository. worker.py and llm_engine.py carry the SPDX and vLLM
+derivation notice reproduced above.
+
+Chapter 7 adds ranges of v4_modules/mlp.py and the eplb package
+(__init__.py, policy.py, shuffle.py). labs/vendor/eplb_policy.py is an
+unmodified copy of eplb/policy.py; see labs/vendor/NOTICE.txt. The replica
+rule quoted from DeepGEMM and TileKernels is recorded under "dependencies" in
+the manifest; those files are cited, not reproduced.
+
+Chapter 8 adds sampling, accepted-prefix, DFlash, verification-budget and
+confidence-allocation excerpts from the same pinned Apache-2.0 repository.
+Exact paths and ranges are in the manifest. layers/sampler.py and
+worker/model_runner.py carry the SPDX and vLLM derivation notice reproduced
+above. Chinese probability arguments are translated in the prose, without
+altering source excerpts.
+Lab 18 translates the budget-search and GPU rank-count algorithms from those
+sources into standard-library Python; its docstring records the original ranges.
+
+Chapter 9 adds YOCO boundary, shared-KV, consumer SWA, metadata, state-layout
+and query-range excerpts from the same pinned Apache-2.0 repository. Exact
+paths and ranges are recorded in the manifest. Chinese comments outside the
+selected ranges are translated and attributed in the prose. Lab 20 translates
+the query-range and SWA prefix-sum formulas from flops_estimator.hpp; its
+docstring identifies the source revision and range.
+
+Chapter 10 adds numerical-test, processed-logprob, sampling-key, golden-override, PIT and grammar
+excerpts from the same pinned Apache-2.0 repository. The manifest records all
+ranges. layers/sampler.py carries the SPDX and vLLM derivation notice above.
+Chinese comments and assertions outside the selected ranges are explained
+separately; printed source lines remain unchanged.
+
+Chapter 11 adds engine-role and state-layout ranges, the stored-SWA round-trip
+comparison from tests/worker/test_state_cache_ops.py, and the decode axes from
+examples/sweep/plot_pareto.py, all from the same pinned Apache-2.0 repository.
+Chinese comments outside the ranges are translated in the prose when needed.
+
+Appendices A and B add compression references and runtime calls, index scoring
+and address metadata, cache formats, sharing topology, process-group construction
+and engine/model-runner boundaries from the same pinned Apache-2.0 repository.
+The manifest records each range. Engine, model-runner and cache-engine excerpts
+carry the SPDX and vLLM derivation notices noted above. Labs 26 and 28 translate
+compression and rank-grouping formulas; lab 27 uses a teaching index score and
+address model, not a copied device kernel.

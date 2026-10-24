@@ -1,0 +1,1 @@
+allow_multiple_reduction=not (envs.DEEPINFER_BATCH_INVARIANT and envs.DEEPINFER_EXPERT_REARRANGEMENT_STEP_INTERVAL > 0),

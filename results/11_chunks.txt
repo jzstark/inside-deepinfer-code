@@ -1,0 +1,24 @@
+Whole prompts, FIFO (budget 12)
+   0->13: A q=12 waiting=['B', 'C']
+  13->16: B q= 2 waiting=['C']
+  16->19: C q= 2 waiting=[]
+  first-token delays: A=13, B=13, C=16
+  work=16 positions; steps=3; finish=19
+
+Chunks, continuation at front (budget 4)
+   0-> 5: A q= 4 waiting=['A', 'B', 'C']
+   5->10: A q= 4 waiting=['A', 'B', 'C']
+  10->15: A q= 4 waiting=['B', 'C']
+  15->18: B q= 2 waiting=['C']
+  18->21: C q= 2 waiting=[]
+  first-token delays: A=15, B=15, C=18
+  work=16 positions; steps=5; finish=21
+
+Chunks, continuation at back (budget 4)
+   0-> 5: A q= 4 waiting=['B', 'C', 'A']
+   5-> 8: B q= 2 waiting=['C', 'A']
+   8->11: C q= 2 waiting=['A']
+  11->16: A q= 4 waiting=['A']
+  16->21: A q= 4 waiting=[]
+  first-token delays: A=21, B=5, C=8
+  work=16 positions; steps=5; finish=21

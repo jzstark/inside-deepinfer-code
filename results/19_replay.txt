@@ -1,0 +1,8 @@
+input: [1, 2, 3, 4, 5, 6, 7, 8]; window=3, layers=2, keep=3
+KV source    last row (full / suffix)  next row (full / suffix)
+shared          22 / 22                   25 / 25
+per-layer       28 / 57/2                 32 / 193/6
+first changed cache: layer 2, position 5 (zero-based), full=11, suffix=12
+keep=5: per-layer final row and retained KV are exact
+20 layers, window 128: dependency span = 2541
+PASS 5456 cases: shared and span replays exact, span - 1 fails on some input; one decode step each

@@ -1,0 +1,11 @@
+DP=4, CP=1, EP=4: 4 device workers
+(global rank, engine rank, CP rank, process role): [(0, 0, 0, 'driver'), (1, 1, 0, 'driver'), (2, 2, 0, 'driver'), (3, 3, 0, 'driver')]
+DP groups: [[0, 1, 2, 3]]
+CP groups: [[0], [1], [2], [3]]
+EP groups: [[0, 1, 2, 3]]
+DP=2, CP=2, EP=4: 4 device workers
+(global rank, engine rank, CP rank, process role): [(0, 0, 0, 'driver'), (1, 0, 1, 'child'), (2, 1, 0, 'driver'), (3, 1, 1, 'child')]
+DP groups: [[0, 2], [1, 3]]
+CP groups: [[0, 1], [2, 3]]
+EP groups: [[0, 1, 2, 3]]
+Checks: each grouping partitions the same four ranks

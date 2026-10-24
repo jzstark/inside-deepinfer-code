@@ -1,0 +1,5 @@
+prompt: [1, 2, 3, 5]
+recompute: [1, 2, 4] | additions: 15
+reuse:     [1, 2, 4] | additions: 6
+same output: True
+history entries: 7 | entries covered by final cache: 6

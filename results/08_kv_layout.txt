@@ -1,0 +1,18 @@
+generic full KV: 536,870,912 B = 512 MiB
+generic window KV: 16,777,216 B = 16 MiB
+SWA row: 512 data B + 16 scale B = 528 B
+128 visible rows, one layer: 67,584 B
+134 allocated rows, one layer: 70,752 B
+
+position | logical range | first/last read slot | write slot
+     127 |   0..127       | 268 / 395            | 395
+     128 |   1..128       | 269 / 396            | 396
+     133 |   6..133       | 274 / 401            | 401
+     134 |   7..134       | 275 / 268            | 268
+checks passed: partial windows, eviction, wraparound, state isolation
+
+per layer/token: separate=4,096 B, SWA=528 B
+default ring: 128 + max(0, 5 + 1) = 134
+S=128: overwritten visible rows per query = [5, 4, 3, 2, 1, 0]
+S=133: overwritten visible rows per query = [0, 0, 0, 0, 0, 0]
+S=134: overwritten visible rows per query = [0, 0, 0, 0, 0, 0]

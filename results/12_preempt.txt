@@ -1,0 +1,20 @@
+stop=False, A.so_status=0
+  output order: [('A', 8), ('C', 4), ('B', 2)]
+  candidate=B; victim=A; blocks A=5, B=11, C=3
+  A: WAITING, processed=0, blocks=[], state=-1
+  waiting=['A', 'D'], ignored=[], free=[3, 2, 1]
+  history retained=True; scheduled=['B', 'C']
+
+stop=True, A.so_status=0
+  output order: [('A', 8), ('C', 4), ('B', 2)]
+  candidate=B; victim=A; blocks A=5, B=11, C=3
+  A: FINISHED_PREEMPTED, processed=19, blocks=[], state=-1
+  waiting=['D'], ignored=['A'], free=[3, 2, 1]
+  history retained=True; scheduled=['B', 'C']
+
+stop=False, A.so_status=1
+  output order: [('A', 8), ('C', 4), ('B', 2)]
+  candidate=B; victim=A; blocks A=5, B=11, C=3
+  A: FINISHED_PREEMPTED, processed=19, blocks=[], state=-1
+  waiting=['D'], ignored=['A'], free=[3, 2, 1]
+  history retained=True; scheduled=['B', 'C']

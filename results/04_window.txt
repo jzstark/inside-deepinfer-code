@@ -1,0 +1,7 @@
+generated: [0, 8, 3, 1]
+history entries: 8 | processed entries: 7
+window before loss: [0, 8, 3]
+rebuilt from processed suffix: [0, 8, 3]
+same window: True
+wrong suffix (includes latest output): [8, 3, 1]
+next token after processing latest output: 2
